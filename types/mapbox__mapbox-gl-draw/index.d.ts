@@ -256,6 +256,7 @@ declare class MapboxDraw implements IControl {
         options?: { featureId: string; from: Feature<Point> | Point | number[] },
     ): this;
     changeMode(mode: Exclude<MapboxDraw.DrawMode, 'direct_select' | 'simple_select' | 'draw_line_string'>): this;
+    changeMode(mode: any, options?: object): this;
 
     setFeatureProperty(featureId: string, property: string, value: any): this;
 
